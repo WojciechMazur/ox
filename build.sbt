@@ -9,6 +9,7 @@ lazy val scala3 = "3.3.7"
 lazy val commonSettings = commonSmlBuildSettings ++ ossPublishSettings ++ Seq(
   organization := "com.softwaremill.ox",
   scalaVersion := scala3,
+  resolvers += Resolver.sonatypeCentralSnapshots,
   updateDocs := Def.taskDyn {
     val files1 = UpdateVersionInDocs(sLog.value, organization.value, version.value)
     Def.task {

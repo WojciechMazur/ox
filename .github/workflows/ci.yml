@@ -1,7 +1,7 @@
 name: CI
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ master, scala-native-support-base ]
   push:
     branches: [ master ]
     tags: [ v* ]

@@ -3,6 +3,7 @@ addSbtPlugin("com.softwaremill.sbt-softwaremill" % "sbt-softwaremill-common" % s
 addSbtPlugin("com.softwaremill.sbt-softwaremill" % "sbt-softwaremill-publish" % sbtSoftwareMillVersion)
 addSbtPlugin("org.scalameta" % "sbt-mdoc" % "2.9.0")
 addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "1.1.5")
-addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.12")
+resolvers += Resolver.sonatypeCentralSnapshots
+addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.5.13-20260927-e4c3cdd-SNAPSHOT")
 addSbtPlugin("com.eed3si9n" % "sbt-projectmatrix" % "0.11.0")
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "2.3.1")
